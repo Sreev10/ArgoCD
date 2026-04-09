@@ -1,4 +1,4 @@
-aapiVersion: apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: devops-app
@@ -14,7 +14,7 @@ spec:
         app: devops-app
     spec:
       containers:
-      - name: devops-app
-        image: devops-app:1.0
-        ports:
-        - containerPort: 3000
+        - name: devops-app
+          image: devops-app:1.0
+          ports:
+            - containerPort: 3000
